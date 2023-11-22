@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>Spiel - Welche Numer</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="canvas">
+      <div class="desc">
+        <div class="top">
+            <button class="top_btn" id="new_btn">Ein neues Spiel</button>
+            <button class="top_btn" id="end_btn">Ende des Spiels</button>
+        </div>
+
+        <h2 class="desc_title" >Erraten Sie die Zahl </h2>
+        <h2 class="desc_title" > von 1 bis 100 </h2>
+        
+        <div class="desc_Subtitle" id="desc_Subtitle"> <span class="desc_Subtitle" >Im neuen Spiel </span>
+        </div>
+      </div>
+
+      <div class="field">      
+        <label for="field_input" class="field_label">Ihre Nummer</label>
+        <input type="text" class="field_input" autofocus>        
+        <button class="field_btn" id="add">Untersuchung</button>
+      </div>
+
+      <div class="result">        
+        <div class="result_help">
+          <span class="result_help_label">Hinweis :<span class="result_help_label"></span> </span>
+          <span class="result_help_out"></span>
+        </div>
+
+        <div class="result_count">
+          <span class="result_count_label">Anzahl der Versuche : </span>
+          <span class="result_count_out"></span>
+        </div>
+
+        <div class="result_chek"><span></span>
+          <span class="result_chek_label">Ergebnis : </span><span class="result_chek_out" id="mark"></span>
+        </div>        
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
